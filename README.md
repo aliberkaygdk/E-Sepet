@@ -10,6 +10,7 @@
 <img src="https://github.com/aliberkaygdk/E-Sepet/assets/63061883/a513a3ff-5c84-4c9d-8c26-7f28c1a85bea" alt="alt text" width="200" height="400">
 <img src="https://github.com/aliberkaygdk/E-Sepet/assets/63061883/8f3a89b9-9d47-4b4c-b150-125932df70ab" alt="alt text" width="200" height="400">
 <img src="https://github.com/aliberkaygdk/E-Sepet/assets/63061883/01f4b3b9-0ad3-41a4-857e-e52f6a303325" alt="alt text" width="200" height="400">
+<img src="https://github.com/aliberkaygdk/E-Sepet/assets/63061883/1d8f3992-e09c-42e0-83f3-f159279a6772" alt="alt text" width="200" height="400">
 
 
 
