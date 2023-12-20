@@ -1,5 +1,5 @@
 # E-Sepet
- MVVM, Hilt, Retrofit, Glide, Firebase, Lottie
+ MVVM, Hilt, Retrofit, Glide, Firebase, Lottie, Push Notification, WorkManager
 
 
 ----MOCKUPS---
