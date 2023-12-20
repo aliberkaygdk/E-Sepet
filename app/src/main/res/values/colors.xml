@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#dddddd</color>
+    <color name="blue_5">#0078ff</color>
+    <color name="activity_background">#CACACA</color>
+    <color name="buttoncolor">#2f2f2f</color>
+    <color name="delete_red">#FF0000</color>
+</resources>

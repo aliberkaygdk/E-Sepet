@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_background">
+
+
+            <ImageView
+                android:id="@+id/imageViewSepet"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <ImageButton
+                android:id="@+id/buttonSil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_close_24"
+                android:background="@drawable/quarter_circle_for_delete"
+                android:text="Sil"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSepetTutar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSepetTutar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Tutar: "
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSepetAdet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/textViewSepetFiyat"
+                app:layout_constraintStart_toEndOf="@+id/imageViewSepet"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSepetAd" />
+
+            <TextView
+                android:id="@+id/textViewSepetFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewSepet"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSepetAdet" />
+
+            <TextView
+                android:id="@+id/textViewSepetAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginStart="32dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/textViewSepetAdet"
+                app:layout_constraintStart_toEndOf="@+id/imageViewSepet"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
