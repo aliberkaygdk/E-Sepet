@@ -1,6 +1,7 @@
 # E-Sepet
  MVVM, Hilt, Retrofit, Glide, Firebase, Lottie, Push Notification, WorkManager
 
+Techcareer.net tarafından düzenlenen, eğitimini Kasım Adalanın verdiği, Android - Java Bootcamp bitirme projesidir.
 
 ----MOCKUPS---
 
