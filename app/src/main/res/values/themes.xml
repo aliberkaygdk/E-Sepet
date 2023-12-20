@@ -10,7 +10,14 @@
         <item name="android:textColorPrimary">@color/black</item>
     </style>
 
-    <style name="Theme.BitirmeProje" parent="Base.Theme.BitirmeProje" />
+    <style name="Theme.BitirmeProje" parent="Base.Theme.BitirmeProje" >
+
+
+    </style>
+    <style name="Black" parent="Base.Theme.BitirmeProje">
+        <item name="android:statusBarColor">#242424</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
 
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
         <item name="android:color">@color/activity_background</item>

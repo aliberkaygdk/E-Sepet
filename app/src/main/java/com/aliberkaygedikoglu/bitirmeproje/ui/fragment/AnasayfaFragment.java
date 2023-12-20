@@ -3,6 +3,7 @@ package com.aliberkaygedikoglu.bitirmeproje.ui.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
@@ -103,17 +104,32 @@ public class AnasayfaFragment extends Fragment{
     }
 
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        refreshData();
+    }
 
-   /*@Override
+    @Override
     public void onResume() {
         super.onResume();
-        viewModel.yemekleriYukle();
+        refreshData();
+    }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        refreshData();
 
-    }*/
-
-
-
-
-
+    }
+    private void refreshData() {
+        viewModel.yemeklerListesi.observe(getViewLifecycleOwner(), newFoodList -> {
+            if (binding.rc.getAdapter() == null) {
+                AnasayfaRecyclerAdapter adapter = new AnasayfaRecyclerAdapter(newFoodList, requireContext(), viewModel);
+                binding.rc.setAdapter(adapter);
+            } else {
+                ((AnasayfaRecyclerAdapter) binding.rc.getAdapter()).updateFoodList(newFoodList);
+            }
+        });
+    }
 }

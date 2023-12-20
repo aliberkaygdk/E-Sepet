@@ -32,6 +32,7 @@ public class AnasayfaRecyclerAdapter extends RecyclerView.Adapter<AnasayfaRecycl
         this.yemeklerList = yemeklerList;
         this.mContext = mContext;
         this.viewModel = viewModel;
+        notifyDataSetChanged();
     }
     public void filterList(ArrayList<Yemekler> filterlist) {
         // below line is to add our filtered
@@ -42,6 +43,10 @@ public class AnasayfaRecyclerAdapter extends RecyclerView.Adapter<AnasayfaRecycl
         notifyDataSetChanged();
     }
 
+    public void updateFoodList(List<Yemekler> newFoodList) {
+        this.yemeklerList = newFoodList;
+        notifyDataSetChanged();
+    }
 
     @NonNull
     @Override
